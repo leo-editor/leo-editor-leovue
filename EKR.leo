@@ -6,7 +6,18 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="ekr.20201122072754.1"><vh>Read me</vh></v>
+<v t="ekr.20201122072754.1"><vh>read me</vh></v>
+<v t="ekr.20201122075704.1"><vh>@clean README.md</vh>
+<v t="ekr.20201122075734.1"><vh>leo-editor-leovue</vh></v>
+</v>
+<v t="ekr.20201122074608.1"><vh>@clean chunking.md </vh>
+<v t="ekr.20201122075134.1"><vh>Code Chunking</vh></v>
+</v>
+<v t="ekr.20201122075109.1"><vh>@clean feature-introduction.md</vh>
+<v t="ekr.20201122075117.1"><vh>Leo Is an Outlining Editor</vh></v>
+<v t="ekr.20201122075117.2"><vh>Leo Outlines can contain Cloned Nodes</vh></v>
+<v t="ekr.20201122075117.3"><vh>Leo Outlines can mirror other files</vh></v>
+</v>
 <v t="ekr.20201122062937.1"><vh>@clean index.html</vh>
 <v t="ekr.20201122062937.2"><vh>&lt;&lt;head&gt;&gt;</vh>
 <v t="ekr.20201122062937.3"><vh>&lt;&lt; set window.lconfig &gt;&gt;</vh></v>
@@ -25,14 +36,6 @@
 <v t="ekr.20201122062937.14"><vh>&lt;&lt; global site tag &gt;&gt;</vh></v>
 <v t="ekr.20201122062937.15"><vh>&lt;&lt; style &gt;&gt;</vh></v>
 </v>
-</v>
-<v t="ekr.20201122074608.1"><vh>@clean chunking.md </vh>
-<v t="ekr.20201122075134.1"><vh>Code Chunking</vh></v>
-</v>
-<v t="ekr.20201122075109.1"><vh>@clean feature-introduction.md</vh>
-<v t="ekr.20201122075117.1"><vh>Leo Is an Outlining Editor</vh></v>
-<v t="ekr.20201122075117.2"><vh>Leo Outlines can contain Cloned Nodes</vh></v>
-<v t="ekr.20201122075117.3"><vh>Leo Outlines can mirror other files</vh></v>
 </v>
 </vnodes>
 <tnodes>
@@ -419,6 +422,19 @@ Repeat this process with the other sections of the Vuejs component, now each has
 &lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo8.png" alt="leo8.png"&gt;
 
 This is a simple example, but using Leo it is possible to quickly break up a large, complex set of code into manageable pieces. The target file is not affected, and if the target file is changed in another program, Leo will update the appropriate nodes.
+</t>
+<t tx="ekr.20201122075704.1">@language md
+@tabwidth -4
+@others</t>
+<t tx="ekr.20201122075734.1"># leo-editor-leovue
+
+The repository for EKR.com, at http://ekr.rrhandwovens.com
+
+The contents of the static folder came from [Joe Orr's Leovue site](https://kaleguy.github.io/leovue).
+
+index.html came from Joe Orr's site, unmodified.
+
+docs.leo came from Joe Orr's site, with slight modification for Leo's install instructions.
 </t>
 </tnodes>
 </leo_file>
