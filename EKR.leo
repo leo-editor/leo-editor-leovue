@@ -26,6 +26,7 @@
 <v t="ekr.20201122062937.15"><vh>&lt;&lt; style &gt;&gt;</vh></v>
 </v>
 </v>
+<v t="ekr.20201122074608.1"><vh>@clean chunking.md </vh></v>
 </vnodes>
 <tnodes>
 <t tx="ekr.20201122062937.1">@language html
@@ -354,6 +355,33 @@ This file manages all the files in the leo-editor-leovue repo.
 https://github.com/leo-editor/leo-editor-leovue
 
 Originals of all files came from https://kaleguy.github.io/leovue
+</t>
+<t tx="ekr.20201122074608.1">@language md
+@wrap
+@tabwidth -4
+# Code Chunking
+
+In the screenshot below, we've created a new node with a @clean directive with a file name. We've pasted the contents of the file into the node.
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo4.png" alt="leo4.png"&gt;
+
+This is a Vuejs component file, with three sections. We're going to break the sections out into separate nodes. First create a section name using double angle brackets.
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo5.png" alt="leo5.png"&gt;
+
+Now select the section name plus the code you want to put in a sub node.
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo6.png" alt="leo6.png"&gt;
+
+Enter Cmd-Shift-D to chunk the selected content into a subnode.
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo7.png" alt="leo7.png"&gt;
+
+Repeat this process with the other sections of the Vuejs component, now each has its own node. 
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo8.png" alt="leo8.png"&gt;
+
+This is a simple example, but using Leo it is possible to quickly break up a large, complex set of code into manageable pieces. The target file is not affected, and if the target file is changed in another program, Leo will update the appropriate nodes.
 </t>
 </tnodes>
 </leo_file>

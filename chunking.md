@@ -1,4 +1,5 @@
 # Code Chunking
+
 In the screenshot below, we've created a new node with a @clean directive with a file name. We've pasted the contents of the file into the node.
 
 <img width="700" src="http://ekr.rrhandwovens.com/static/leo4.png" alt="leo4.png">
@@ -20,5 +21,3 @@ Repeat this process with the other sections of the Vuejs component, now each has
 <img width="700" src="http://ekr.rrhandwovens.com/static/leo8.png" alt="leo8.png">
 
 This is a simple example, but using Leo it is possible to quickly break up a large, complex set of code into manageable pieces. The target file is not affected, and if the target file is changed in another program, Leo will update the appropriate nodes.
-
-
