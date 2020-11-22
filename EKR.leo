@@ -37,6 +37,7 @@
 <v t="ekr.20201122062937.15"><vh>&lt;&lt; style &gt;&gt;</vh></v>
 </v>
 </v>
+<v t="ekr.20201122062937.3"></v>
 </vnodes>
 <tnodes>
 <t tx="ekr.20201122062937.1">@language html
@@ -172,7 +173,7 @@ H1, H2 {
 "showAppTitle": false,
 "showHeader": true,
 "docTitle": "My Outline",
-"filename": "docs",
+"filename": "LeoVue", // was docs.
 "firstNodeAsTitle": true,
 "baseMode": "t", // t = outline, for other types, see below
 "activeBackgroundColor": "#01FF70", //
