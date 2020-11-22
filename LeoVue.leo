@@ -48,9 +48,9 @@
 <v t="josephorr.20170511082833.1"><vh>Subtrees</vh>
 <v t="josephorr.20170511083006.1"><vh>[Top](static/example.leo)</vh></v>
 </v>
-<v t="josephorr.20170326072340.1"><vh>File Nodes</vh>
-<v t="josephorr.20170408092907.1"><vh>@clean ../src/services/leo.js</vh></v>
-<v t="josephorr.20170328225527.1"><vh>@clean ../src/components/TreeViewer.vue</vh>
+<v t="josephorr.20170326072340.1"><vh>File Nodes </vh>
+<v t="josephorr.20170408092907.1"><vh>@clean src/services/leo.js</vh></v>
+<v t="josephorr.20170328225527.1"><vh>@clean src/components/TreeViewer.vue</vh>
 <v t="josephorr.20170328225654.1"><vh>&lt;&lt; template &gt;&gt;</vh></v>
 <v t="josephorr.20170328225718.1"><vh>&lt;&lt; script &gt;&gt;</vh></v>
 <v t="josephorr.20170328225741.1"><vh>&lt;&lt; style &gt;&gt;</vh></v>
@@ -604,7 +604,7 @@ Clicking on the clone icon brings up a menu of all locations in the tree at whic
 </t>
 <t tx="josephorr.20170326072340.1">## Load File Content into Node
 
-Leo Nodes can be @file nodes. This means that Leo keeps a link to an external file and will sync with any changes in the external file. </t>
+Leo nodes can create external files. Leo keeps a link to an external file and will sync with any changes in the external file. </t>
 <t tx="josephorr.20170326174500.1">@language md
 
 # About Leo
@@ -616,6 +616,7 @@ displaying it with LeoVue.
 
 &lt;toc&gt;&lt;/toc&gt;</t>
 <t tx="josephorr.20170326174511.1">@language md
+@wrap
 
 ## Content Creation with Leo
 

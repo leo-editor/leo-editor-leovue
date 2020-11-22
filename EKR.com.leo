@@ -163,7 +163,7 @@ H1, H2 {
 }
 &lt;/script&gt;
 &lt;meta charset=utf-8&gt;
-&lt;title&gt;LeoVue&lt;/title&gt;
+&lt;title&gt;LeoVue (EKR.com)&lt;/title&gt;
 &lt;meta name=keywords content="knowledge organization, outlines, outliner, outlining IDE"&gt;
 &lt;meta name=description
       content="Knowledge Organization with Leo and LeoVue: organize content and files into complex outlines."&gt;
@@ -365,7 +365,11 @@ githubRibbon: {
 This file manages all the files in the leo-editor-leovue repo.
 https://github.com/leo-editor/leo-editor-leovue
 
-Originals of all files came from https://kaleguy.github.io/leovue
+Originals of all files came from Joe Orr's leovue repo:
+https://github.com/kaleguy/leovue
+
+Joe Orr's original site:
+https://kaleguy.github.io/leovue
 </t>
 <t tx="ekr.20201122074608.1">@language md
 @wrap
