@@ -6,7 +6,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="ekr.20201122062703.1"><vh>EKR.com.leo</vh></v>
+<v t="ekr.20201122072754.1"><vh>Read me</vh></v>
 <v t="ekr.20201122062937.1"><vh>@clean index.html</vh>
 <v t="ekr.20201122062937.2"><vh>&lt;&lt;head&gt;&gt;</vh>
 <v t="ekr.20201122062937.3"><vh>&lt;&lt; set window.lconfig &gt;&gt;</vh></v>
@@ -26,11 +26,8 @@
 <v t="ekr.20201122062937.15"><vh>&lt;&lt; style &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="ekr.20201122062937.2"></v>
-<v t="ekr.20201122062937.3"></v>
 </vnodes>
 <tnodes>
-<t tx="ekr.20201122062703.1"></t>
 <t tx="ekr.20201122062937.1">@language html
 @tabwidth -2
 &lt;html&gt;
@@ -349,6 +346,14 @@ githubRibbon: {
     &lt;/div&gt;
   &lt;/div&gt;&lt;/script&gt;
 &lt;script type=text/template id=rgauthor&gt;
+</t>
+<t tx="ekr.20201122072754.1">@language rest
+@wrap
+
+This file manages all the files in the leo-editor-leovue repo.
+https://github.com/leo-editor/leo-editor-leovue
+
+Originals of all files came from https://kaleguy.github.io/leovue
 </t>
 </tnodes>
 </leo_file>
