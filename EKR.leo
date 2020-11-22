@@ -26,21 +26,8 @@
 <v t="ekr.20201122062937.15"><vh>&lt;&lt; style &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="ekr.20201122062937.3"></v>
-<v t="ekr.20201122063932.1"><vh>git diff HEAD </vh>
-<v t="ekr.20201122063932.2"><vh>index.html</vh>
-<v t="ekr.20201122063932.35"><vh>Changed</vh>
-<v t="ekr.20201122063932.36"><vh>&lt;&lt;head&gt;&gt;</vh>
-<v t="ekr.20201122063932.37"><vh>Old:&lt;&lt;head&gt;&gt;</vh></v>
 <v t="ekr.20201122062937.2"></v>
-</v>
-<v t="ekr.20201122063932.38"><vh>&lt;&lt; set window.lconfig &gt;&gt;</vh>
-<v t="ekr.20201122063932.39"><vh>Old:&lt;&lt; set window.lconfig &gt;&gt;</vh></v>
 <v t="ekr.20201122062937.3"></v>
-</v>
-</v>
-</v>
-</v>
 </vnodes>
 <tnodes>
 <t tx="ekr.20201122062703.1"></t>
@@ -165,6 +152,7 @@ H1, H2 {
 &lt;script&gt;window.lconfig = {
   &lt;&lt; set window.lconfig &gt;&gt;
 }
+&lt;/script&gt;
 &lt;meta charset=utf-8&gt;
 &lt;title&gt;LeoVue&lt;/title&gt;
 &lt;meta name=keywords content="knowledge organization, outlines, outliner, outlining IDE"&gt;
@@ -201,27 +189,27 @@ githubRibbon: {
 // dataSources have a template name as key
 // the template object has one key: host
 // the host will have the node title appended to fetch JSON which gets processed via the template
-"dataSources": {
-  "rgarticle": {
-    "host": "http://localhost:8888/rg/article?title=",
-  },
-  "rgarticle-brief": {
-    "host": "http://localhost:8888/rg/article?title=",
-  },
-  "rgarticles": {
-    "host": "http://localhost:8888/rg/articles?name=",
-  },
-  "rgauthor": {
-    "host": "http://localhost:8888/rg/author?name=",
-  },
-  "rgcitations": {
-    "host": "http://localhost:8888/rg/citations?name=",
-  }
-}
+"dataSources":
+        {
+          "rgarticle": {
+            "host": "http://localhost:8888/rg/article?title=",
+          },
+          "rgarticle-brief": {
+            "host": "http://localhost:8888/rg/article?title=",
+          },
+          "rgarticles": {
+            "host": "http://localhost:8888/rg/articles?name=",
+          },
+          "rgauthor": {
+            "host": "http://localhost:8888/rg/author?name=",
+          },
+          "rgcitations": {
+            "host": "http://localhost:8888/rg/citations?name=",
+          }
+        }
 // "leftPaneWidth": 'calc(50vw - 300px)',
 // "rightPaneWidth": 'calc(50vw + 300px)',
-// "leftPanePadding": 'calc(50vw - 600px)',&lt;/script&gt;
-</t>
+// "leftPanePadding": 'calc(50vw - 600px)',</t>
 <t tx="ekr.20201122062937.4">&lt;div id=app&gt;&lt;/div&gt;
 &lt;script type=text/ons-template id=popover.html&gt;
 &lt;&lt; static footer &gt;&gt;
@@ -361,200 +349,6 @@ githubRibbon: {
     &lt;/div&gt;
   &lt;/div&gt;&lt;/script&gt;
 &lt;script type=text/template id=rgauthor&gt;
-</t>
-<t tx="ekr.20201122063932.1">@ignore
-@nosearch
-HEAD=1c3b3a0</t>
-<t tx="ekr.20201122063932.2">@ignore
-@nosearch
-@language patch
---- HEAD
-+++ uncommitted
-@@ -36,28 +36,27 @@
-     // dataSources have a template name as key
-     // the template object has one key: host
-     // the host will have the node title appended to fetch JSON which gets processed via the template
--    "dataSources":
--            {
--              "rgarticle": {
--                "host": "http://localhost:8888/rg/article?title=",
--              },
--              "rgarticle-brief": {
--                "host": "http://localhost:8888/rg/article?title=",
--              },
--              "rgarticles": {
--                "host": "http://localhost:8888/rg/articles?name=",
--              },
--              "rgauthor": {
--                "host": "http://localhost:8888/rg/author?name=",
--              },
--              "rgcitations": {
--                "host": "http://localhost:8888/rg/citations?name=",
--              }
--            }
-+    "dataSources": {
-+      "rgarticle": {
-+        "host": "http://localhost:8888/rg/article?title=",
-+      },
-+      "rgarticle-brief": {
-+        "host": "http://localhost:8888/rg/article?title=",
-+      },
-+      "rgarticles": {
-+        "host": "http://localhost:8888/rg/articles?name=",
-+      },
-+      "rgauthor": {
-+        "host": "http://localhost:8888/rg/author?name=",
-+      },
-+      "rgcitations": {
-+        "host": "http://localhost:8888/rg/citations?name=",
-+      }
-+    }
-+    // "leftPaneWidth": 'calc(50vw - 300px)',
-+    // "rightPaneWidth": 'calc(50vw + 300px)',
-+    // "leftPanePadding": 'calc(50vw - 600px)',&lt;/script&gt;
-   }
--  // "leftPaneWidth": 'calc(50vw - 300px)',
--  // "rightPaneWidth": 'calc(50vw + 300px)',
--  // "leftPanePadding": 'calc(50vw - 600px)',&lt;/script&gt;
-   &lt;meta charset=utf-8&gt;
-   &lt;title&gt;LeoVue&lt;/title&gt;
-   &lt;meta name=keywords content="knowledge organization, outlines, outliner, outlining IDE"&gt;
-@language python
-</t>
-<t tx="ekr.20201122063932.35"></t>
-<t tx="ekr.20201122063932.36">@ignore
-@nosearch
-@language patch
---- HEAD
-+++ uncommitted
-@@ -8,9 +8,6 @@
- &lt;script&gt;window.lconfig = {
-   &lt;&lt; set window.lconfig &gt;&gt;
- }
--// "leftPaneWidth": 'calc(50vw - 300px)',
--// "rightPaneWidth": 'calc(50vw + 300px)',
--// "leftPanePadding": 'calc(50vw - 600px)',&lt;/script&gt;
- &lt;meta charset=utf-8&gt;
- &lt;title&gt;LeoVue&lt;/title&gt;
- &lt;meta name=keywords content="knowledge organization, outlines, outliner, outlining IDE"&gt;
-@language python
-</t>
-<t tx="ekr.20201122063932.37">&lt;script defer=defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"&gt;&lt;/script&gt;
-&lt;link href="https://fonts.googleapis.com/css?family=Nunito" rel=stylesheet&gt;
-&lt;script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js&gt;&lt;/script&gt;
-&lt;script defer=defer src=https://cdn.rawgit.com/OnsenUI/OnsenUI-dist/2.0.0-beta.5/js/onsenui.min.js&gt;&lt;/script&gt;
-&lt;script src=https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js&gt;&lt;/script&gt;
-&lt;link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&gt;
-&lt;script&gt;window.lconfig = {
-  &lt;&lt; set window.lconfig &gt;&gt;
-}
-// "leftPaneWidth": 'calc(50vw - 300px)',
-// "rightPaneWidth": 'calc(50vw + 300px)',
-// "leftPanePadding": 'calc(50vw - 600px)',&lt;/script&gt;
-&lt;meta charset=utf-8&gt;
-&lt;title&gt;LeoVue&lt;/title&gt;
-&lt;meta name=keywords content="knowledge organization, outlines, outliner, outlining IDE"&gt;
-&lt;meta name=description
-      content="Knowledge Organization with Leo and LeoVue: organize content and files into complex outlines."&gt;
-&lt;link href=https://cdn.jsdelivr.net/npm/leo-vue/dist/static/css/app.css?146b226f238fbded81574d7b5914df3f rel=stylesheet&gt;
-</t>
-<t tx="ekr.20201122063932.38">@ignore
-@nosearch
-@language patch
---- HEAD
-+++ uncommitted
-@@ -27,21 +27,23 @@
- // dataSources have a template name as key
- // the template object has one key: host
- // the host will have the node title appended to fetch JSON which gets processed via the template
--"dataSources":
--        {
--          "rgarticle": {
--            "host": "http://localhost:8888/rg/article?title=",
--          },
--          "rgarticle-brief": {
--            "host": "http://localhost:8888/rg/article?title=",
--          },
--          "rgarticles": {
--            "host": "http://localhost:8888/rg/articles?name=",
--          },
--          "rgauthor": {
--            "host": "http://localhost:8888/rg/author?name=",
--          },
--          "rgcitations": {
--            "host": "http://localhost:8888/rg/citations?name=",
--          }
--        }
-+"dataSources": {
-+  "rgarticle": {
-+    "host": "http://localhost:8888/rg/article?title=",
-+  },
-+  "rgarticle-brief": {
-+    "host": "http://localhost:8888/rg/article?title=",
-+  },
-+  "rgarticles": {
-+    "host": "http://localhost:8888/rg/articles?name=",
-+  },
-+  "rgauthor": {
-+    "host": "http://localhost:8888/rg/author?name=",
-+  },
-+  "rgcitations": {
-+    "host": "http://localhost:8888/rg/citations?name=",
-+  }
-+}
-+// "leftPaneWidth": 'calc(50vw - 300px)',
-+// "rightPaneWidth": 'calc(50vw + 300px)',
-+// "leftPanePadding": 'calc(50vw - 600px)',&lt;/script&gt;
-@language python
-</t>
-<t tx="ekr.20201122063932.39">@language javascript
-"showAppTitle": false,
-"showHeader": true,
-"docTitle": "My Outline",
-"filename": "docs",
-"firstNodeAsTitle": true,
-"baseMode": "t", // t = outline, for other types, see below
-"activeBackgroundColor": "#01FF70", //
-"itemArrow": "\uf105", // ▹▷▶›&gt;►
-"leftPaneWidth": '300px',
-"leftPaneBackground": '#fafafa',
-"leftPanePadding": '10px',
-"contentPaneWidth": '780px',
-"coverPage": true,
-"viewTypes": [
-  {"name": "Outline", "type": "t"},
-  {"name": "Inline", "type": "a"},
-  {"name": "Graphic Tree", "type": "d"},
-  // {"name": "Dendrogram", "type": "z"},
-  {"name": "Nested Menu", "type": "n"}
-],
-githubRibbon: {
-  text: 'Fork me on GitHub',
-  linkUrl: 'https://github.com/kaleguy/leovue',
-  fixed: true
-},
-// dataSources have a template name as key
-// the template object has one key: host
-// the host will have the node title appended to fetch JSON which gets processed via the template
-"dataSources":
-        {
-          "rgarticle": {
-            "host": "http://localhost:8888/rg/article?title=",
-          },
-          "rgarticle-brief": {
-            "host": "http://localhost:8888/rg/article?title=",
-          },
-          "rgarticles": {
-            "host": "http://localhost:8888/rg/articles?name=",
-          },
-          "rgauthor": {
-            "host": "http://localhost:8888/rg/author?name=",
-          },
-          "rgcitations": {
-            "host": "http://localhost:8888/rg/citations?name=",
-          }
-        }
 </t>
 </tnodes>
 </leo_file>
