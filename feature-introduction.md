@@ -5,7 +5,6 @@ In the screenshot below, you can see an outline or tree in the top left pane, an
 <!--- Download these from https://kaleguy.github.io/leovue --->
 
 <img width="700" src="http://ekr.rrhandwovens.com/static/leo1.png" alt="leo1.png">
-
 # Leo Outlines can contain Cloned Nodes
 
 A single node can appear in multiple places in your tree, this is called a "clone" node. This allows Leo Outlines to be in effect, three dimensional and arbitrarily complex.
@@ -13,7 +12,6 @@ A single node can appear in multiple places in your tree, this is called a "clon
 In the screenshot below, the "Coffeescript" node has been cloned and is appearing in two places in the tree. When you edit the content of the node and then click on its clone, you'll see that the edited content shows on both.
 
 <img width="700" src="http://ekr.rrhandwovens.com/static/leo2.png" alt="ScreenShot">
-
 # Leo Outlines can mirror other files
 
 The screenshot below shows a node with a '@clean' directive. This tells Leo that the content of the node should mirror the file specified by the directive.

@@ -26,7 +26,14 @@
 <v t="ekr.20201122062937.15"><vh>&lt;&lt; style &gt;&gt;</vh></v>
 </v>
 </v>
-<v t="ekr.20201122074608.1"><vh>@clean chunking.md </vh></v>
+<v t="ekr.20201122074608.1"><vh>@clean chunking.md </vh>
+<v t="ekr.20201122075134.1"><vh>Code Chunking</vh></v>
+</v>
+<v t="ekr.20201122075109.1"><vh>@clean feature-introduction.md</vh>
+<v t="ekr.20201122075117.1"><vh>Leo Is an Outlining Editor</vh></v>
+<v t="ekr.20201122075117.2"><vh>Leo Outlines can contain Cloned Nodes</vh></v>
+<v t="ekr.20201122075117.3"><vh>Leo Outlines can mirror other files</vh></v>
+</v>
 </vnodes>
 <tnodes>
 <t tx="ekr.20201122062937.1">@language html
@@ -359,7 +366,37 @@ Originals of all files came from https://kaleguy.github.io/leovue
 <t tx="ekr.20201122074608.1">@language md
 @wrap
 @tabwidth -4
-# Code Chunking
+@others
+</t>
+<t tx="ekr.20201122075109.1">@language md
+@tabwidth -4
+@others
+</t>
+<t tx="ekr.20201122075117.1"># Leo Is an Outlining Editor
+
+In the screenshot below, you can see an outline or tree in the top left pane, and content for current node being entered into the bottom pane.
+
+&lt;!--- Download these from https://kaleguy.github.io/leovue ---&gt;
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo1.png" alt="leo1.png"&gt;
+</t>
+<t tx="ekr.20201122075117.2"># Leo Outlines can contain Cloned Nodes
+
+A single node can appear in multiple places in your tree, this is called a "clone" node. This allows Leo Outlines to be in effect, three dimensional and arbitrarily complex.
+
+In the screenshot below, the "Coffeescript" node has been cloned and is appearing in two places in the tree. When you edit the content of the node and then click on its clone, you'll see that the edited content shows on both.
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo2.png" alt="ScreenShot"&gt;
+</t>
+<t tx="ekr.20201122075117.3"># Leo Outlines can mirror other files
+
+The screenshot below shows a node with a '@clean' directive. This tells Leo that the content of the node should mirror the file specified by the directive.
+
+This means that, when the target file is updated by another program, the content in the node will automatically update in Leo, regardless of whether that content has been divided into subnodes by Leo. To see how this works, read the next section: &lt;b&gt;Chunking&lt;/b&gt;.
+
+&lt;img width="700" src="http://ekr.rrhandwovens.com/static/leo3.png" alt="ScreenShot"&gt;
+</t>
+<t tx="ekr.20201122075134.1"># Code Chunking
 
 In the screenshot below, we've created a new node with a @clean directive with a file name. We've pasted the contents of the file into the node.
 
