@@ -16,8 +16,8 @@
 <v t="josephorr.20170327233257.1"><vh>Installing Leo</vh></v>
 </v>
 <v t="josephorr.20170327233126.1"><vh>More About LeoVue</vh>
-<v t="josephorr.20181006112633.1"><vh>[LeoVue Quick Look](static/QuickLook.md)</vh></v>
-<v t="josephorr.20180304203537.1"><vh>[LeoVue README](README.md)</vh></v>
+<v t="josephorr.20181006112633.1"><vh>[LeoVue Quick Look](QuickLook.md)</vh></v>
+<v t="josephorr.20180304203537.1"><vh>[LeoVue README](LeoVueREADME.md)</vh></v>
 <v t="josephorr.20171116064625.1"><vh>Current Feature List</vh></v>
 <v t="josephorr.20180326061144.1"><vh>Bookmarks, URLs and Links</vh></v>
 <v t="josephorr.20170331200411.1"><vh>Installing and Using LeoVue</vh>
@@ -2346,7 +2346,7 @@ The real name of user D is Pat.</t>
 <t tx="josephorr.20180303162711.1"></t>
 <t tx="josephorr.20180303171634.1">sort-item etc.</t>
 <t tx="josephorr.20180304114723.1">https://en.wikipedia.org/wiki/Evaporating_Cloud</t>
-<t tx="josephorr.20180304203537.1"></t>
+<t tx="josephorr.20180304203537.1">Was README.md</t>
 <t tx="josephorr.20180305204208.1"></t>
 <t tx="josephorr.20180326061144.1">@language html
 
@@ -2747,7 +2747,7 @@ The child nodes below contain some examples of Bootstrap Vue components in use.
 &lt;/div&gt;
   
 </t>
-<t tx="josephorr.20181006112633.1"></t>
+<t tx="josephorr.20181006112633.1">was (static/QuickLook.md)</t>
 <t tx="josephorr.20181007134257.1">## Example Sites
 
 &lt;div class="hshim"&gt;&lt;/div&gt;
