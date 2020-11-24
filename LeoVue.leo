@@ -2920,14 +2920,20 @@ An important feature of Leo is &lt;b&gt;directives&lt;/b&gt;, short instructions
 to process content.
 &lt;/p&gt;
 
-Directives start with an '@' sign. For example, the @clean directive on a node title tells Leo 
-that the content of that node and its subnodes is coming from an external file, and Leo needs to keep 
-the content of the subtree synchronized with that file, but without adding any markers in the target file 
-(hence the name 'clean').</t>
+Directives start with an '@' sign. For example, the @clean directive on a
+node title tells Leo that the content of that node and its subnodes is
+coming from an external file, and Leo needs to keep the content of the
+subtree synchronized with that file, but without adding any markers in the
+target file (hence the name 'clean').</t>
 <t tx="josephorr.20181120155705.1">
-Leo has a number of directives, and only a few are recognized or processed by LeoVue. For example, the **@clean** directive is ignored by LeoVue, since LeoVue only displays content and does not synchronize content with external files.
+Leo has a number of directives, and only a few are recognized or processed
+by LeoVue. For example, the **@clean** directive is ignored by LeoVue,
+since LeoVue only displays content and does not synchronize content with
+external files.
 
-Leo directives can be used to mark content, for example **@language html** notifies Leo that the node content is html and to highlight that content accordingly.
+Leo directives can be used to mark content, for example **@language html**
+notifies Leo that the node content is html and to highlight that content
+accordingly.
 
 LeoVue recognizes the @language directive:
 
@@ -2936,7 +2942,8 @@ LeoVue recognizes the @language directive:
 
 Other languages will be displayed as formatted source (for example @language python).
 
-When LeoVue encounters a language directive, it copies it to all descendant nodes unless those nodes already have a language directive. 
+When LeoVue encounters a language directive, it copies it to all descendant
+nodes unless those nodes already have a language directive.
 </t>
 <t tx="josephorr.20181120155718.1">&lt;p&gt;
 LeoVue adds a few directives not found in the Leo. These are all node
@@ -2949,20 +2956,21 @@ type of content into the node or how to display the node content.
   to have content fill the entire pane. The @board directive tells LeoVue
   to use the entire content pane to display the node content.
 
-* **@rss:** Display a formatted RSS feed (requires name and url). Example:
-    ```
-    @rss [NYT New York Region](http://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml)
-    
-    ```
-* **@xml:** Read an xml source file and display the formatted output as transformed by a specified template.
+* **@rss:** Display a formatted RSS feed (requires name and url). Example::
 
-* **@json:** Read a JSON source file and display the formatted output as transformed by a specified template.
+    @rss [NYT New York Region](http://rss.nytimes.com/services/xml/rss/nyt/NYRegion.xml)
+
+* **@xml:** Read an xml source file and display the formatted output as
+  transformed by a specified template.
+
+* **@json:** Read a JSON source file and display the formatted output as
+  transformed by a specified template.
 
 * **@book:** Given a label and an ISBN, retrieve the book data from openlibrary.org,
-and display formatted content. Example:
-    ```
+  and display formatted content. Example::
+  
     @book [Concrete Mathematics](0201558025)
-    ```
+
 * **@kanban:** Display a subtree as a Kanban board.
 
 * **@mermaid:** Display a subtree as a Mermaidjs diagram.
@@ -2978,15 +2986,13 @@ and display formatted content. Example:
 
 * **@dataSet:** This is the only directive that doesn't indicate how
   content is shown but rather how it is consumed (by components in other
-  nodes). For example:
+  nodes). For example::
 
-   ```
-   @dataSet set1 Some Sample Data
-   ```
+    @dataSet set1 Some Sample Data
    
-   In the above example, the data in the example node will have a key of
-   'set1' (which can be used by components elsewhere in the tree). The text
-   after the key name will be used as the node label in the tree menu.
+  In the above example, the data in the example node will have a key of
+  'set1' (which can be used by components elsewhere in the tree). The text
+  after the key name will be used as the node label in the tree menu.
    
 * **@group-** Treat the immediate child nodes as one data set.
 
@@ -3000,7 +3006,7 @@ and display formatted content. Example:
 
 </t>
 <t tx="josephorr.20181120155733.1">Not exactly a directive, but operates similarly to the content directive
-above. If you enter a node title like this:
+above. If you enter a node title like this::
 
     [Interstellar on Wikipedia](https://en.wikipedia.org/wiki/Interstellar_(film))
     
