@@ -789,7 +789,9 @@ The simplest way to use Leo is to load it from a CDN. If so, you just need two f
 * **index.html**
 * **Your Leo file**
 
-To get started with the CDN, clone &lt;a target="_blank" href="http://kaleguy.github.io/leo-examples"&gt;one of the examples&lt;/a&gt; and swap in your Leo file.
+To get started with the CDN, clone &lt;a target="_blank"
+href="http://kaleguy.github.io/leo-examples"&gt;one of the examples&lt;/a&gt; and
+swap in your Leo file.
 
 Also see the [[Configuring]] section for a list of parameters for customization. 
 
@@ -1210,7 +1212,8 @@ export {getLeoJSON, transformLeoXML, transformLeoXML2XML, transform}
 
 # Basic Configuration Options
 
-By default, LeoVue will load a file located at "static/docs.leo". To load a different file, change the **fileName** param in index.html.
+By default, LeoVue will load a file located at "static/docs.leo". To load a
+different file, change the **fileName** param in index.html.
 
 Other Parameters:
 * **docTitle**: Title for the Leo file (will show in top menubar)
@@ -1221,13 +1224,14 @@ Other Parameters:
 Style parameters:
 
 * **activeBackgroundColor**: Background color of active menu item
-* **itemArrow**: The character to be used as a caret indicating menu open/closed. Any Font Awesome or Unicode character can be used.
+* **itemArrow**: The character to be used as a caret indicating menu open/closed.
+  Any Font Awesome or Unicode character can be used.
 * **leftPaneWidth**: The menu pane width
 * **rightPaneWidth**: The content pane width,
 * **leftPanePadding**: Right margin on the tree menu
 * **contentPaneWidth**: The left (content) pane width
-* **coverPage**: If true, and if the first node of the Leo file is marked with the @cover directive, will create a cover page from the @cover node. (See the LeoVue site for an example).
-
+* **coverPage**: If true, and if the first node of the Leo file is marked with the @cover directive,
+  will create a cover page from the @cover node. (See the LeoVue site for an example).
 
 Parameters can be passed in to the url or entered in index.html. See index.html for examples.
 
@@ -2769,14 +2773,18 @@ The child nodes below contain some examples of Bootstrap Vue components in use.
 
 </t>
 <t tx="josephorr.20181013124816.1">
-A number of good solutions exist for documenting your Github project. For example, 
-&lt;a href="https://docsify.js.org/#/" target="_blank"&gt;Docsify&lt;/a&gt; allows you to create a site for your project using Markdown files. 
+A number of good solutions exist for documenting your Github project. For
+example, &lt;a href="https://docsify.js.org/#/" target="_blank"&gt;Docsify&lt;/a&gt;
+allows you to create a site for your project using Markdown files.
 
-Like Docsify, LeoVue can be used to create a site from your markdown files, with many features useful to code documentation, 
-such as syntax highlighting. 
+Like Docsify, LeoVue can be used to create a site from your markdown files,
+with many features useful to code documentation, such as syntax
+highlighting.
 
-LeoVue additionally adds the ability to add more content in the Leo outline directly, and to create a complex nested menu. Entries in a Leo menu can point not just to markdown or code documents, but to subsections in documents, and these subsections 
-can be defined quickly in Leo. 
+LeoVue additionally adds the ability to add more content in the Leo outline
+directly, and to create a complex nested menu. Entries in a Leo menu can
+point not just to markdown or code documents, but to subsections in
+documents, and these subsections can be defined quickly in Leo.
 
 In other words, Leo can outline not just sites, but also individual documents.
 
@@ -2794,10 +2802,13 @@ Then, the file has been chunked or outlined with Leo (see [[Chunking]]).
 
 The onload section has been selected.
 
-Going forward, edits to src/kitchen-sink.html done in an IDE can be updated in the Leo outline using the Leo application, and 
-then republished with LeoVue.
+Going forward, edits to src/kitchen-sink.html done in an IDE can be updated
+in the Leo outline using the Leo application, and then republished with
+LeoVue.
 
-This kind of outlining is useful when you want to explain how a particular source file works in detail, as opposed to simply documenting an interface or API.</t>
+This kind of outlining is useful when you want to explain how a particular
+source file works in detail, as opposed to simply documenting an interface
+or API.</t>
 <t tx="josephorr.20181016191554.1">template: rgarticles
 nodeList: 
   listKey: articles
@@ -2928,10 +2939,15 @@ Other languages will be displayed as formatted source (for example @language pyt
 When LeoVue encounters a language directive, it copies it to all descendant nodes unless those nodes already have a language directive. 
 </t>
 <t tx="josephorr.20181120155718.1">&lt;p&gt;
-LeoVue adds a few directives not found in the Leo. These are all node level directives. Most of them are used to tell LeoVue to load a particular type of content into the node or how to display the node content.
+LeoVue adds a few directives not found in the Leo. These are all node
+level directives. Most of them are used to tell LeoVue to load a particular
+type of content into the node or how to display the node content.
 &lt;/p&gt;
 
-* **@board:** Normally LeoVue limits the width in the content page to a default of 780px (this is configurable). However, sometimes you may want to have content fill the entire pane. The @board directive tells LeoVue to use the entire content pane to display the node content.
+* **@board:** Normally LeoVue limits the width in the content page to a
+  default of 780px (this is configurable). However, sometimes you may want
+  to have content fill the entire pane. The @board directive tells LeoVue
+  to use the entire content pane to display the node content.
 
 * **@rss:** Display a formatted RSS feed (requires name and url). Example:
     ```
@@ -2942,7 +2958,8 @@ LeoVue adds a few directives not found in the Leo. These are all node level dire
 
 * **@json:** Read a JSON source file and display the formatted output as transformed by a specified template.
 
-* **@book:** Given a label and an ISBN, retrieve the book data from openlibrary.org, and display formatted content. Example:
+* **@book:** Given a label and an ISBN, retrieve the book data from openlibrary.org,
+and display formatted content. Example:
     ```
     @book [Concrete Mathematics](0201558025)
     ```
@@ -2950,29 +2967,45 @@ LeoVue adds a few directives not found in the Leo. These are all node level dire
 
 * **@mermaid:** Display a subtree as a Mermaidjs diagram.
 
-* **@presentation:** Display a subtree as Revealjs presentation. The subtree can have multiple levels, allowing for the creation of nested presentations. S
+* **@presentation:** Display a subtree as Revealjs presentation. The
+  subtree can have multiple levels, allowing for the creation of nested
+  presentations.
 
-* **@page:** The content for the current item and all child items will appear on one scrolling page. The current page is an example of this directive. Note that the page scrolls as items on the page are selected in the tree menu, rather than a new content item being opened. 
+* **@page:** The content for the current item and all child items will
+  appear on one scrolling page. The current page is an example of this
+  directive. Note that the page scrolls as items on the page are selected
+  in the tree menu, rather than a new content item being opened.
 
-* **@dataSet:** This is the only directive that doesn't indicate how content is shown but rather how it is consumed (by components in other nodes). For example:
+* **@dataSet:** This is the only directive that doesn't indicate how
+  content is shown but rather how it is consumed (by components in other
+  nodes). For example:
 
    ```
    @dataSet set1 Some Sample Data
    ```
-   In the above example, the data in the example node will have a key of 'set1' (which can be used by components elsewhere in the tree). The text after the key name will be used as the node label in the tree menu. 
    
-* **@group-** Treat the immediate child nodes as one data set.   
+   In the above example, the data in the example node will have a key of
+   'set1' (which can be used by components elsewhere in the tree). The text
+   after the key name will be used as the node label in the tree menu.
+   
+* **@group-** Treat the immediate child nodes as one data set.
+
 * **@from-** Extract a subset of data from the a group.   
 
-* **@mgroup-** Create a group (that is, an object) from the metadata in current nodes child nodes and attach to the node. See the @m directive below, plus examples elsewhere in this document.  
+* **@mgroup-** Create a group (that is, an object) from the metadata in
+  current nodes child nodes and attach to the node. See the @m directive
+  below, plus examples elsewhere in this document.
+
 * **@tgoup-** Same as @m but for tags (see the @t directive).
 
 </t>
-<t tx="josephorr.20181120155733.1">Not exactly a directive, but operates similarly to the content directive above. If you enter a node title like this:
+<t tx="josephorr.20181120155733.1">Not exactly a directive, but operates similarly to the content directive
+above. If you enter a node title like this:
 
     [Interstellar on Wikipedia](https://en.wikipedia.org/wiki/Interstellar_(film))
     
-The label 'Interstellar on Wikipedia' will show in the tree menu, and the content at the specified URL will display in the content window.
+The label 'Interstellar on Wikipedia' will show in the tree menu, and the
+content at the specified URL will display in the content window.
 
 For examples of content directives, see the [[ URL Nodes ]] section.
 
@@ -7463,11 +7496,12 @@ In addition to node level directives, LeoVue has the following content directive
 are placed in node content. 
 &lt;/p&gt;
 
-* **@m:** (metadata) Marks the YAML immediately following as metadata. The YAML will be removed on display and 
-attached to the node as a property. It can be accessed by a component.
+* **@m:** (metadata) Marks the YAML immediately following as metadata. The
+  YAML will be removed on display and attached to the node as a property.
+  It can be accessed by a component.
 
-* **@t:** (tags) Same as the metadata directive but instead interprets the following contiguous lines as a list
-of tags.
+* **@t:** (tags) Same as the metadata directive but instead interprets the
+  following contiguous lines as a list of tags.
 </t>
 </tnodes>
 </leo_file>
